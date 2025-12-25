@@ -1,0 +1,179 @@
+index.html <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spice Palace Indian Cuisine</title>
+
+<style>
+:root {
+  --primary: #8b0000;
+  --secondary: #f4b41a;
+  --dark: #1f1f1f;
+  --light: #fff8f0;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--light);
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+  url("https://source.unsplash.com/1600x800/?indian-food,restaurant") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+.button {
+  display: inline-block;
+  background: var(--secondary);
+  color: black;
+  padding: 12px 22px;
+  margin: 10px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 30px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.menu div {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+.contact {
+  background: var(--dark);
+  color: white;
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+  border-radius: 10px;
+}
+
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Spice Palace Indian Cuisine</h1>
+  <p>Authentic Indian Food • Ypsilanti, Michigan</p>
+  <a class="button" href="#">Order Online</a>
+  <a class="button" href="#contact">Call Now</a>
+</header>
+
+<section>
+  <h2>About Us</h2>
+  <p>
+    Spice Palace Indian Cuisine brings traditional Indian flavors to Ypsilanti.
+    Our dishes are prepared using authentic spices, fresh ingredients, and
+    time-honored recipes. Enjoy butter chicken, biryani, tandoori specialties,
+    and delicious vegetarian options. Dine-in, takeout, and catering available.
+  </p>
+</section>
+
+<section>
+  <h2>Photo Gallery</h2>
+  <div class="gallery">
+    <img src="https://source.unsplash.com/featured/?butter-chicken" alt="Butter Chicken">
+    <img src="https://source.unsplash.com/featured/?biryani" alt="Biryani">
+    <img src="https://source.unsplash.com/featured/?tandoori-chicken" alt="Tandoori Chicken">
+    <img src="https://source.unsplash.com/featured/?naan" alt="Naan Bread">
+  </div>
+</section>
+
+<section>
+  <h2>Menu Highlights</h2>
+  <div class="menu">
+    <div>🍛 Butter Chicken</div>
+    <div>🍗 Chicken Tikka Masala</div>
+    <div>🍚 Lamb & Chicken Biryani</div>
+    <div>🥬 Palak Paneer</div>
+    <div>🥟 Aloo Samosa</div>
+    <div>🥭 Mango Lassi</div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Visit Us</h2>
+  <p><strong>📍 Address:</strong> 2874 Washtenaw Ave, Ypsilanti, MI 48197</p>
+  <p><strong>📞 Phone:</strong> (734) 415-2789</p>
+  <p><strong>🕒 Hours:</strong> 11:00 AM – 3:00 PM & 5:00 PM – 10:00 PM</p>
+
+  <iframe 
+    src="https://www.google.com/maps?q=2874+Washtenaw+Ave,+Ypsilanti,+MI+48197&output=embed">
+  </iframe>
+
+  <p>
+    <a class="button" href="#">DoorDash</a>
+    <a class="button" href="#">Uber Eats</a>
+    <a class="button" href="#">Grubhub</a>
+  </p>
+</section>
+
+<footer>
+  <p>© 2025 Spice Palace Indian Cuisine | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
